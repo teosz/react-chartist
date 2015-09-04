@@ -24,13 +24,9 @@
     "url": "https://github.com/fraserxu/react-chartist/issues"
   },
   "homepage": "https://github.com/fraserxu/react-chartist",
-  "peerDependencies": {
-    "react": ">=0.13.0",
-    "chartist": ">=0.9.0"
-  },
   "dependencies": {
     "chartist": "^0.9.1",
-    "react": "^0.13.2"
+    "react": ">=0.13.0"
   },
   "scripts": {
     "build": "babel index.js > dist/index.js"
