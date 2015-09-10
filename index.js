@@ -35,7 +35,7 @@ class ChartistGraph extends React.Component {
     if (this.chartist) {
       this.chartist.update(data, options, responsiveOptions);
     } else {
-      this.chartist = new Chartist[type](React.findDOMNode(this), data, options, responsiveOptions);
+      this.chartist = new Chartist[type](this.refs.chart, data, options, responsiveOptions);
 
       if (config.listener) {
         for (event in config.listener) {
@@ -51,7 +51,7 @@ class ChartistGraph extends React.Component {
   }
 
   render() {
-    return React.DOM.div({className: 'ct-chart'})
+    return React.createElement('div', { ref: 'chart', className: 'ct-chart' });
   }
 
 }
